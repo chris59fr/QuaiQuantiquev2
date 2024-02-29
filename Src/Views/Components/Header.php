@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link active" href="#">Menu</a>
               <div class="lineMenu"></div>
             </li>
             <li class="nav-item">
@@ -51,6 +51,10 @@
           </ul>
         </div>
       </div>
+      
+        
+
+      
     </nav>
 
     <div class="line-containerDown">

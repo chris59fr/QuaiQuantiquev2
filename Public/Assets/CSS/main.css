@@ -208,7 +208,7 @@ button {
 }
 
 header {
-  background-color: #3b4b54;
+  background-color: #3b4b54 !important;
 }
 
 nav ul {
@@ -225,59 +225,13 @@ nav a:hover, nav a:focus {
   color: #e7b846;
 }
 
-.lineMenu {
-  width: 82px;
-  position: absolute;
-  height: 2px;
-  background-color: #e7b846;
-  border-radius: 0px 50px 50px 0px;
-}
-
-.lineMenu2 {
-  width: 130px;
-  position: absolute;
-  height: 2px;
-  background-color: #e7b846;
-  border-radius: 0px 50px 50px 0px;
-}
-
-.lineMenu3 {
-  width: 110px;
-  position: absolute;
-  height: 2px;
-  background-color: #e7b846;
-  border-radius: 0px 50px 50px 0px;
-}
-
-.lineMenu4 {
-  width: 40px;
-  position: absolute;
-  height: 2px;
-  background-color: #e7b846;
-  border-radius: 0px 50px 50px 0px;
-}
-
-.lineMenu5 {
-  width: 160px;
-  position: absolute;
-  height: 2px;
-  background-color: #e7b846;
-  border-radius: 0px 50px 50px 0px;
-}
-
-.lineMenu6 {
-  width: 120px;
-  position: absolute;
-  height: 2px;
-  background-color: #e7b846;
-  border-radius: 0px 50px 50px 0px;
-}
 
 .lineUp {
   width: 65px;
   height: 4px;
   background-color: #e7b846;
   border-radius: 0px 50px 50px 0px;
+  position: absolute;
 }
 
 .lineDown {
@@ -285,6 +239,4 @@ nav a:hover, nav a:focus {
   height: 4px;
   background-color: #e7b846;
   border-radius: 0px 50px 50px 0px;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
