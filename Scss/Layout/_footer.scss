@@ -1,5 +1,5 @@
-@use '../Abstracts/' as *;
-@use '../Base/' as *;
+@use '../Abstracts/all' as *;
+@use '../Base/fonts' as *;
 
 footer {
   background-color: $color-primary;

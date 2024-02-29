@@ -1,6 +1,6 @@
-@use '../Abstracts/' as *;
+@use '../Abstracts/all' as *;
 @use '../Components/_burgerButton';
-@use '../Base/' as *;
+@use '../Base/fonts' as *;
 
 header {
   background-color: $color-primary-light-70;
