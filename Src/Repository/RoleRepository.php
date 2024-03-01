@@ -36,7 +36,7 @@ class RoleRepository extends AbstractRepository
     }
   }
   
-  
+
   /**
    * Recupere un rôle
    * @return $result[]

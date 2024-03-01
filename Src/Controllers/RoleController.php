@@ -32,6 +32,8 @@ class RoleController
     }
   }
 
+
+
   public function readRole() {
 
     $roles = $this->rolerepository->getAllRoles();
@@ -49,6 +51,8 @@ class RoleController
     }
   }
 
+
+  
   public function updateRole($id_role, $name_role) {
 
     //Get FORMULAIRE
@@ -66,7 +70,7 @@ class RoleController
   }
 
 
-  
+
   public function deleteRole($id_role) {
     //GET fORMULAIRE
     try{
