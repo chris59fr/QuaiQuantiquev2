@@ -12,6 +12,7 @@ class Role
     $this->validateName($name_role);
   }
 
+
     /**
    * Getter Setter pour name_role
    */
@@ -28,8 +29,9 @@ class Role
     return $this;
   }
 
+
     /**
-   * Getter Setter pour id_role
+   * Getter(recup) Setter(modif) pour id_role
    */
   public function getIdRole() : ?int
   {
@@ -44,7 +46,8 @@ class Role
     return $this;
   }
   
-    /**
+
+  /**
    * Validation du nom de rôle
    */
   public function validateName(string $name_role): void

@@ -15,6 +15,7 @@ class RoleController
     $this->rolerepository = new RoleRepository ;
   }
 
+
   public function createRole($name_role) {
 
     // $name_role = $_GET['name_role']; formulaire
@@ -49,7 +50,8 @@ class RoleController
   }
 
   public function updateRole($id_role, $name_role) {
-    //Get FIOOMULAIRE
+
+    //Get FORMULAIRE
     try {
 
       $role = new Role($id_role, $name_role);
@@ -63,6 +65,8 @@ class RoleController
     }
   }
 
+
+  
   public function deleteRole($id_role) {
     //GET fORMULAIRE
     try{
