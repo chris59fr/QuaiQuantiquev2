@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../../../Public/Assets/CSS/bootstrap.css">
-  <link rel="stylesheet" href="../../../Public/Assets/CSS/main.css">
-</head>
-<body>
-  
 
   <footer class="container-fluid">
 
@@ -26,13 +15,13 @@
           <p>Dimanche</p>
         </div>
         <div class="hours">
-          <p>12:00-15:00 / 19:00-22:00</p>
-          <p>12:00-15:00 / 19:00-22:00</p>
-          <p>Fermé</p>
-          <p>12:00-15:00 / 19:00-22:00</p>
-          <p>12:00-15:00 / 19:00-22:00</p>
-          <p>18:00-23:00</p>
-          <p>11:00-14:00</p>
+          <p>Aucun horaire actuellement</p>
+          <p>Aucun horaire actuellement</p>
+          <p>Aucun horaire actuellement</p>
+          <p>Aucun horaire actuellement</p>
+          <p>Aucun horaire actuellement</p>
+          <p>Aucun horaire actuellement</p>
+          <p>Aucun horaire actuellement</p>
         </div>
   
       </div>
@@ -63,7 +52,7 @@
     </div>
 
     <div class="signature">
-      <img src="../../../../Back/public/assets/Logo/SignatureLogo.svg">
+      <img class="footerLogo" src="../../../Public/Assets/Images/Logo/LogoOK.svg">
       <h5>Au plaisir de vous recevoir !</h5>
     </div>
     <div class="line-legal"></div>
@@ -74,7 +63,4 @@
 
   </footer>
 
-  <script src="../../../Public/Assets/JS/bootstrap.bundle.min.js"></script>
-</body>
-</html>
   

@@ -76,6 +76,9 @@ footer {
 .signature {
   margin: $spacing-xlarge;
 }
+.footerLogo {
+  width: 16em ;
+}
 .footer-legal {
   @include font ($font-jost, 300, 9px);
   @extend %flex-center-column;
