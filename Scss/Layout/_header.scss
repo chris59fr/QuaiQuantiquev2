@@ -1,10 +1,9 @@
-@use '../abstracts/all' as *;
-@use '../Base/fonts' as *;
+@use '../Abstracts/all' as *;
 @use '../Components/_burgerButton';
-
+@use '../Base/fonts' as *;
 
 header {
-  background-color: $color-primary-light-70;
+  background-color: $color-primary;
 }
 
 nav ul {
