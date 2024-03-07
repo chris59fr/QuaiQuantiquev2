@@ -1,2 +1,28 @@
 @use '../Abstracts/all' as *;
 @use '../Base/fonts' as *;
+
+
+
+.picture {
+
+    @extend %flex-column-center;
+    padding: 10%;
+}
+
+
+
+
+.picture img {
+    width: 50vw;
+    height: 60vh;
+    margin: 2%;
+    box-shadow: 18px 17px 20px -3px rgba(0,0,0,0.1);
+    cursor: pointer;
+
+}
+
+
+.menuGalerie {
+    @include font ($font-jost, 200, $font-size-small); 
+
+}

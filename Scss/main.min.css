@@ -7,6 +7,12 @@ footer, .footer-adress, .nosAdress h4, .nosAdress p, .footer-legal {
   align-items: center;
 }
 
+.picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media screen and (max-width: 576px) {
   header {
     display: flex;
@@ -208,7 +214,7 @@ button {
 }
 
 header {
-  background-color: #3b4b54 !important;
+  background-color: #3b4b54;
 }
 
 nav ul {
@@ -225,13 +231,59 @@ nav a:hover, nav a:focus {
   color: #e7b846;
 }
 
+.lineMenu {
+  width: 82px;
+  position: absolute;
+  height: 2px;
+  background-color: #e7b846;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.lineMenu2 {
+  width: 130px;
+  position: absolute;
+  height: 2px;
+  background-color: #e7b846;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.lineMenu3 {
+  width: 110px;
+  position: absolute;
+  height: 2px;
+  background-color: #e7b846;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.lineMenu4 {
+  width: 40px;
+  position: absolute;
+  height: 2px;
+  background-color: #e7b846;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.lineMenu5 {
+  width: 160px;
+  position: absolute;
+  height: 2px;
+  background-color: #e7b846;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.lineMenu6 {
+  width: 120px;
+  position: absolute;
+  height: 2px;
+  background-color: #e7b846;
+  border-radius: 0px 50px 50px 0px;
+}
 
 .lineUp {
   width: 65px;
   height: 4px;
   background-color: #e7b846;
   border-radius: 0px 50px 50px 0px;
-  position: absolute;
 }
 
 .lineDown {
@@ -239,4 +291,22 @@ nav a:hover, nav a:focus {
   height: 4px;
   background-color: #e7b846;
   border-radius: 0px 50px 50px 0px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.picture {
+  padding: 10%;
+}
+
+.picture img {
+  width: 50vw;
+  height: 60vh;
+  margin: 2%;
+  box-shadow: 18px 17px 20px -3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.menuGalerie {
+  font-family: "Jost", sans-serif;
+  font-weight: 200;
+  font-size: 0.875rem;
+}

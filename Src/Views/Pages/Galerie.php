@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../../Public/Assets/CSS/main.css">
+    <link rel="stylesheet" href="../../../Scss/main.min.css">
     <script src="https://kit.fontawesome.com/d3e5723829.js" crossorigin="anonymous"></script>
     <title>QuaiQantique</title>
 </head>
@@ -15,8 +15,8 @@
 <?php  require_once '../Components/Header.php';
 ?>
 
-<header class="container-fluid">
-    <div class="menus">
+<div class="container-fluid">
+    <div class="menuGalerie">
         <nav>
             <li>
                 <ul>Entrées</ul>
@@ -28,16 +28,17 @@
     </div>
     
 
-</header>
+</div>
 
 <main class="container-fluid">
-    <div class="picture col-md-12">
-        <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Entrées/SALADE DE POUSSES D’EPINARD .webp">
-        <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Entrées/GASPACHO DE CONCOMBRE.webp">
-        <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Plats/FONDU SAVOYARDE.webp">
-        <img src="/QuaiQuantiquev2/Public/Uploads/Cuisinier/cuisinier_3.webp">
-        <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Desserts/DESSERTS FRANCAIS/PAVLOVA.webp ">
-    </div>
+    <div class= "row">
+        <div class="picture col-md-12">
+            <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Entrées/SALADE DE POUSSES D’EPINARD .webp">
+            <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Entrées/GASPACHO DE CONCOMBRE.webp">
+            <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Plats/FONDU SAVOYARDE.webp">
+            <img src="/QuaiQuantiquev2/Public/Uploads/Cuisinier/cuisinier_3.webp">
+            <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Desserts/DESSERTS FRANCAIS/PAVLOVA.webp ">
+        </div>
 
 
 </main>
