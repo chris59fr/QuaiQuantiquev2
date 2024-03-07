@@ -15,7 +15,7 @@
 .picture img {
     width: 50vw;
     height: 60vh;
-    margin: 2%;
+    margin: 3%;
     box-shadow: 18px 17px 20px -3px rgba(0,0,0,0.1);
     cursor: pointer;
 
@@ -24,5 +24,18 @@
 
 .menuGalerie {
     @include font ($font-jost, 200, $font-size-small); 
+    background-color:rgba(59, 75, 84, 0.3);
+    padding: 1%;
 
+}
+
+.menuGalerie a {
+    font-size:x-large;
+    font-weight: 400;
+    color: #fafeff;;
+}
+
+
+.menuGalerie a:hover {
+    color: #e7b846;
 }
