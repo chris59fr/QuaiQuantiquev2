@@ -63,4 +63,7 @@
 
   </footer>
 
+  <script src="../../../Public/Assets/JS/bootstrap.bundle.min.js"></script>
+
+
   

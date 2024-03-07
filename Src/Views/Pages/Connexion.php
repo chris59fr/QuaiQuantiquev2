@@ -19,6 +19,5 @@
 
   <?php require_once '../Components/Footer.php'; ?>
 
-  <script src="../../../Public/Assets/JS/bootstrap.bundle.min.js"></script>
 </body>
 </html>
