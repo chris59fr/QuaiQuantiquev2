@@ -1,0 +1,228 @@
+
+@import './galerie.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+
+
+
+.slogan {
+    
+    display: flex;
+    align-items: center;
+    right: 28%;
+    font-family: 40px;
+    color: #fafeff;
+    right: 38%;
+    
+}
+
+
+.home img {
+    height: 40px;
+    left: 30px;
+    color: #e7b846;
+
+}
+
+
+.navbar {
+    background: #3b4b54;
+}
+
+
+.navbar button {
+    background-color: #e7b846;
+}
+
+
+h1 {
+    font-family: Luxurious script;
+    font-size:4em;
+    margin-top: 10%;
+    text-align: center;
+
+
+}
+button .span {
+    background-color: #e7b846;
+}
+
+
+
+li {
+    display: flex;
+    justify-content: center;
+    background-color: #8ea3ad;
+    padding: 1%;
+    font-family: Jost ;
+    font-size: 1.5em;
+    color: #fafeff;
+    cursor: pointer;
+
+}
+
+
+li :hover {
+
+    color: #e7b846;
+    overflow: hidden;
+}
+/*******$ debut picture main *****/
+
+.picture {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+
+
+
+
+.picture img {
+    width: 350px;
+    height: 400px;
+    padding: 5%;
+    margin: 5%;
+    box-shadow: 5px 8px 8px -2px rgba(0,0,0,0.1);
+    cursor: pointer;
+
+}
+
+
+/****footer*****/
+
+
+
+.horaire {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.ouverture h2 {
+    color: #e7b846;
+    text-decoration:underline;
+    margin-top: 4%;
+    font-size: 5em;
+    font-weight: 100;
+    font-family: Luxurious script;
+
+}
+
+
+.ouverture {
+    background-color: #3b4b54;
+    text-align: center;
+    
+}
+
+
+
+.ouverture p {
+    color:#fafeff;
+    font-family: Jost;
+    font-weight: 20px;
+    margin-top: 3%;
+    font-size:1.4em ;
+
+}
+
+
+.adress p {
+
+    text-align: center;
+    font-size: 1.4em ;
+    padding-top: 5%;
+    font-weight: 300;
+
+}
+
+
+.adress h4 {
+    color: #fafeff;
+    font-family: Jost;
+    font: 1em sans-serif;
+    font-weight: 500;
+    
+
+}
+
+
+.heure p {
+    font-weight: 100;
+}
+
+
+.contact button {
+    background-color: #e7b846;
+    font-size: 30px;
+    margin-top: 4%;
+    cursor: pointer;
+    color: #fafeff;
+    font-family: Jost;
+}
+
+
+
+.trais {
+    color:   #e7b846 ;
+}
+
+
+.signature {
+    margin-top: 10%;
+}
+
+
+.signature p {
+    font-family: Luxurious script;
+    text-align: center;
+    bottom: 30px;
+    left: 85px;
+    position:relative
+    
+}
+
+
+.signature h3 {
+    font-family: Jost ;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    position: relative;
+    font-size: 50px;
+    color: #e7b846;
+    text-decoration: underline;
+    
+
+
+}
+
+
+.copyrigth p {
+    font-size: small;
+    text-align: center;
+    
+}
+
+
+
+.signature img {
+    height: 120px;
+
+}
+
+
+span {
+    color: #fafeff;
+}
+
