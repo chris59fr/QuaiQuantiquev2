@@ -1,88 +1,97 @@
 @use '../Abstracts/all' as *;
 @use '../Base/fonts' as *;
 
+
 footer {
   background-color: $color-primary;
   @extend %flex-center-column;
   color: $color-third;
+  
   h2 {
-    font-family: $font-luxurious-script;
+    @include font ($font-luxurious-script, normal, $font-size-xxlarge);
     color: $color-secondary;
-    font-size: $font-size-xxlarge;
     display: flex;
     justify-content: center;
+    border-bottom: 2px solid $color-secondary;
   }
 
-  .lineh2 {
-    position: relative;
-    bottom: 15px;
-    width: 250px;
-    height: 2px;
-    background-color: $color-secondary;
+  .footerTime {
+    @extend %flex-center-column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  
+    .timeOpen {
+      @extend %flex-spacebet;
+      line-height: 35px;
+      gap: 45px;
+      padding-top: 15px;
+      .weekdays {
+        @include font($font-jost, 500, $font-size-small);
+      }
+      .hours {
+        @include font($font-jost, lighter, $font-size-small);
+      }
+    }
+    
+  } 
+  
+  
+  .footerAdress {
+    @extend %flex-center-column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  
+    .nosAdress  {
+      padding-top: 20px;
+      h4 {
+        @include font ($font-jost, lighter, $font-size-xlarge);
+        @extend %flex-center-column;
+      }
+      p {
+      @extend %flex-center-column;
+      }
+      .lineOr {
+        border-bottom: 2px solid $color-secondary;
+        margin: 25px
+      }
+    }
+    
   }
-
-  .time-open {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  
+  
+  .signatureBtn {
+    @extend %flex-center-column;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  
+    .signature {
+  
+      h5 {
+        @include font ($font-luxurious-script, normal, $font-size-medium);
+        color: $color-third;
+      }
+      .footerLogo {
+        width: 16em ;
+      }
+    }
+    .btnFooter {
+      text-transform: uppercase;
+      color: $color-third;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
   }
-}
-.footer-time {
-  font-family: $font-jost;
-  &-weekdays {
-      font-weight: normal;
-      font-size: 15px;
+  
+  
+  .footer-legal {
+    border-top: 2px solid $color-secondary;
+    padding-top: 10px;
+    @include font ($font-jost, 300, 10px);
+    @extend %flex-center-column;
+  
+    p {
+      margin-bottom: 5px;
+    }
   }
-  &-hours {
-    @include font ($font-jost, 300, $font-size-small)
-  }
-} 
-.footer-adress {
-  @include font ($font-jost, 500, $font-size-small);
-  @extend %flex-center-column;
-
-  .lineadress {
-    position: relative;
-    width: 100px;
-    height: 2px;
-    background-color: $color-secondary;
-  }
-}
-.nosAdress h4 {
-  @include font ($font-jost, 200, $font-size-xlarge);
-  @extend %flex-center-column;
-}
-.nosAdress p {
-  @extend %flex-center-column;
-}
-.footer-contact {
-  @include font ($font-jost, 500, $font-size-small);
-  background-color: $color-secondary;
-  color: $color-third;
-}
-.footer-greeting {
-  @include font ($font-luxurious-script, 300, $font-size-small);
-}
-.line-legal {
-  position: relative;
-  width: 317px;
-  height: 2px;
-  background-color: $color-secondary;
-  margin-bottom: 10px
-}
-.signature h5 {
-  font-family: $font-luxurious-script;
-}
-.signature {
-  margin: $spacing-xlarge;
-}
-.footerLogo {
-  width: 16em ;
-}
-.footer-legal {
-  @include font ($font-jost, 300, 9px);
-  @extend %flex-center-column;
-}
-.footer-legal p {
-  margin-bottom: 5px;
+  
 }
