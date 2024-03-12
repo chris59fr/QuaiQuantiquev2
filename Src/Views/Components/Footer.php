@@ -1,6 +1,6 @@
 <footer class="container-fluid">
   <div class="row d-flex">
-    <div class="footerTime col-md-6 col-lg-3">
+    <div class="footerTime col-md-6 col-lg-4">
       <h2>Horaires d'ouvertures</h2>
       <div class="timeOpen">
         <div class="weekdays">
@@ -24,7 +24,7 @@
 
       </div>
     </div>
-    <div class="footerAdress col-md-6 col-lg-3">
+    <div class="footerAdress col-md-6 col-lg-4">
       <h2>Nos Adresses</h2>
       <div class="nosAdress">
         <h4>PARIS</h4>
@@ -42,7 +42,7 @@
         <p>Tél: +33 (0)1 06 07 08 09</p>
       </div>
     </div>
-    <div class="signatureBtn col-md-12 col-lg-3">
+    <div class="signatureBtn col-md-12 col-lg-4">
       <div class="signature">
         <img class="footerLogo" src="../../../Public/Assets/Images/Logo/LogoOK.svg">
         <h5>Au plaisir de vous recevoir !</h5>
