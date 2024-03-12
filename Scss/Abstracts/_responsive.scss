@@ -13,7 +13,7 @@ $breakpoint-xlarge: 1200px;
 
 // Styles pour le menu responsive
 
-// ecran taille petit
+//breackpoint qui comprend tout ce qui est en dessous de 576px
 @media screen and (max-width: $breakpoint-small) {
 
   header {
@@ -32,9 +32,27 @@ $breakpoint-xlarge: 1200px;
     }
   }
 
+  footer {
+    
+    .footerBis {
+
+      .signatureBtn {
+
+        .signature {
+
+          .footerLogo {
+            max-width: 20em ;
+          }
+        }
+      }
+    }
+    
+    
+    
+  }
 }
 
-// ecran taille moyenne
+// breackpoint qui comprend tout ce qui est en dessu de 576px et en dessous de 768px
 @media screen and (min-width: $breakpoint-small) and (max-width: $breakpoint-medium) {
 
   header {
@@ -54,10 +72,45 @@ $breakpoint-xlarge: 1200px;
     }
   }
 
+  footer {
 
+    .footerBis {
+
+      .footerTime {
+      
+        .timeOpen {
+
+          .weekdays {
+            font-size: 0.8rem;
+          }
+          .hours {
+            font-size: 0.8rem;
+          }
+        }
+      } 
+      
+      .signatureBtn {
+
+        .signature {
+
+          .footerLogo {
+            max-width: 20em ;
+          }
+        }
+      }
+    }
+    
+    .footer-legal {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+    
+  }
 }
 
-// ecran taille moyenne
+//breackpoint qui comprend tout ce qui est en dessus de 768px et en dessous de 992px
 @media screen and (min-width: $breakpoint-medium) and (max-width: $breakpoint-large) {
 
   header {
@@ -76,9 +129,45 @@ $breakpoint-xlarge: 1200px;
     }
   }
 
+  footer {
+
+    .footerBis {
+
+      .footerTime {
+      
+        .timeOpen {
+
+          .weekdays {
+            font-size: 1rem;
+          }
+          .hours {
+            font-size: 1rem;
+          }
+        }
+      } 
+      
+      .signatureBtn {
+
+        .signature {
+
+          .footerLogo {
+            max-width: 22em ;
+          }
+        }
+      }
+    }
+    
+    .footer-legal {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+    
+  }
 }
 
-//ecrans taille grands
+//breackpoint qui comprend tout ce qui est en dessu de 992px et en dessous de 1200px
 @media screen and (min-width: $breakpoint-large) and (max-width: $breakpoint-xlarge) {
 
   header {
@@ -94,9 +183,46 @@ $breakpoint-xlarge: 1200px;
     
   }
 
+  footer {
+
+    .footerBis {
+
+      .footerTime {
+      
+        .timeOpen {
+
+          .weekdays {
+            font-size: 1rem;
+          }
+          .hours {
+            font-size: 1rem;
+          }
+        }
+      } 
+      
+      .signatureBtn {
+
+        .signature {
+
+          .footerLogo {
+            max-width: 22em ;
+          }
+        }
+      }
+    }
+    
+    .footer-legal {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+    
+  }
+
 }
 
-//ecran taille très grands
+//breackpoint qui comprend tout ce qui est en dessu de 1200px
 @media screen and (min-width: $breakpoint-xlarge) {
 
   header {
@@ -106,14 +232,51 @@ $breakpoint-xlarge: 1200px;
     align-items: flex-start;
     height: 100px;
 
-    .lineMenu, .lineMenu2, .lineMenu3, .lineMenu4, .lineMenu5, .lineMenu6 {
+    .lineMenu,
+    .lineMenu2,
+    .lineMenu3,
+    .lineMenu4,
+    .lineMenu5,
+    .lineMenu6 {
       visibility: hidden;
     }
 
   }
 
   footer {
+
+    .footerBis {
+
+      .footerTime {
+      
+        .timeOpen {
+
+          .weekdays {
+            font-size: 1rem;
+          }
+          .hours {
+            font-size: 1rem;
+          }
+        }
+      } 
+      
+      .signatureBtn {
+
+        .signature {
+
+          .footerLogo {
+            max-width: 22em ;
+          }
+        }
+      }
+    }
+    
+    .footer-legal {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
     
   }
-
-} 
+}
