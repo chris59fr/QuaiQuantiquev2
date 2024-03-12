@@ -4,94 +4,95 @@
 
 footer {
   background-color: $color-primary;
-  @extend %flex-center-column;
   color: $color-third;
-  
-  h2 {
-    @include font ($font-luxurious-script, normal, $font-size-xxlarge);
-    color: $color-secondary;
+  .footerBis {
     display: flex;
-    justify-content: center;
-    border-bottom: 2px solid $color-secondary;
-  }
+    justify-content: space-around;
+    align-items: flex-start;
 
-  .footerTime {
-    @extend %flex-center-column;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  
-    .timeOpen {
-      @extend %flex-spacebet;
-      line-height: 35px;
-      gap: 45px;
-      padding-top: 15px;
-      .weekdays {
-        @include font($font-jost, 500, $font-size-small);
-      }
-      .hours {
-        @include font($font-jost, lighter, $font-size-small);
-      }
+    h2 {
+      @include font ($font-luxurious-script, normal, $font-size-xxlarge);
+      color: $color-secondary;
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid $color-secondary;
     }
-    
-  } 
   
-  
-  .footerAdress {
-    @extend %flex-center-column;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  
-    .nosAdress  {
-      padding-top: 20px;
-      h4 {
-        @include font ($font-jost, lighter, $font-size-xlarge);
-        @extend %flex-center-column;
-      }
-      p {
+    .footerTime {
       @extend %flex-center-column;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    
+      .timeOpen {
+        @extend %flex-spacebet;
+        line-height: 35px;
+        gap: 45px;
+        padding-top: 15px;
+        .weekdays {
+          @include font($font-jost, 500, $font-size-small);
+        }
+        .hours {
+          @include font($font-jost, lighter, $font-size-small);
+        }
       }
-      .lineOr {
-        border-bottom: 2px solid $color-secondary;
-        margin: 25px
+      
+    } 
+    
+    
+    .footerAdress {
+      @extend %flex-center-column;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    
+      .nosAdress  {
+        padding-top: 20px;
+        h4 {
+          @include font ($font-jost, lighter, $font-size-xlarge);
+          @extend %flex-center-column;
+        }
+        p {
+        @extend %flex-center-column;
+        }
+        .lineOr {
+          border-bottom: 2px solid $color-secondary;
+          margin: 25px
+        }
       }
+      
     }
     
-  }
-  
-  
-  .signatureBtn {
-    @extend %flex-center-column;
-    padding-top: 20px;
-    padding-bottom: 15px;
-  
-    .signature {
-  
-      h5 {
-        @include font ($font-luxurious-script, normal, $font-size-medium);
+    
+    .signatureBtn {
+      @extend %flex-center-column;
+      padding-top: 20px;
+      padding-bottom: 15px;
+    
+      .signature {
+    
+        h5 {
+          @include font ($font-luxurious-script, normal, $font-size-medium);
+          color: $color-third;
+        }
+        .footerLogo {
+          max-width: 20em ;
+        }
+      }
+      .btnFooter {
+        text-transform: uppercase;
         color: $color-third;
+        margin-top: 15px;
+        margin-bottom: 15px;
       }
-      .footerLogo {
-        width: 16em ;
-      }
-    }
-    .btnFooter {
-      text-transform: uppercase;
-      color: $color-third;
-      margin-top: 15px;
-      margin-bottom: 15px;
     }
   }
+  
   
   
   .footer-legal {
-    border-top: 2px solid $color-secondary;
-    padding-top: 10px;
-    @include font ($font-jost, 300, 10px);
+    border-top: 3px solid $color-secondary;
+    padding: 10px;
+    @include font ($font-jost, 200, 0.5rem);
     @extend %flex-center-column;
-  
-    p {
-      margin-bottom: 5px;
-    }
   }
   
 }
