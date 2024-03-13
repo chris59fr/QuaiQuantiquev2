@@ -38,11 +38,11 @@
 <main class="container-fluid">
     <div class= "row">
         <div class="picture col-md-12">
-                <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Entrées/SALADE DE POUSSES D’EPINARD .webp" class="img-fluid">
-                <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Entrées/GASPACHO DE CONCOMBRE.webp" class="img-fluid">
-                <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Plats/FONDU SAVOYARDE.webp" class="img-fluid">
-                <img src="/QuaiQuantiquev2/Public/Uploads/Cuisinier/cuisinier_3.webp" class="img-fluid">
-                <img src="/QuaiQuantiquev2/Public/Uploads/CARTE/Desserts/DESSERTS FRANCAIS/PAVLOVA.webp " class="img-fluid">
+                <img src="/QuaiquantiqueV2/QuaiQuantiquev2/Public/Uploads/CARTE/Entrées/SALADE DE POUSSES D’EPINARD .webp" class="img-fluid">
+                <img src="/QuaiquantiqueV2/QuaiQuantiquev2/Public/Uploads/CARTE/Entrées/GASPACHO DE CONCOMBRE.webp" class="img-fluid">
+                <img src="/QuaiquantiqueV2/QuaiQuantiquev2/Public/Uploads/CARTE/Plats/FONDU SAVOYARDE.webp" class="img-fluid">
+                <img src="/QuaiquantiqueV2/QuaiQuantiquev2/Public/Uploads/Cuisinier/cuisinier_3.webp" class="img-fluid">
+                <img src="/QuaiquantiqueV2/QuaiQuantiquev2/Public/Uploads/CARTE/Desserts/DESSERTS FRANCAIS/PAVLOVA.webp " class="img-fluid">
         </div>
 
 
