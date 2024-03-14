@@ -1,7 +1,6 @@
 @use '../Abstracts/all' as *;
 @use '../Base/fonts' as *;
 
-
 footer {
   background-color: $color-primary;
   color: $color-third;
@@ -29,10 +28,17 @@ footer {
         gap: 45px;
         padding-top: 15px;
         .weekdays {
-          @include font($font-jost, 500, $font-size-small);
+          text-transform: uppercase;
+          @include font($font-jost, 300, $font-size-small);
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
         }
         .hours {
           @include font($font-jost, lighter, $font-size-small);
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
         }
       }
       
@@ -96,3 +102,4 @@ footer {
   }
   
 }
+

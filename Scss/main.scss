@@ -1,8 +1,7 @@
-@use 'base/reset' as *;
 @use 'layout/footer' as *;
 @use 'layout/header' as *;
 @use 'pages/home' as *;
-
+@use 'base/reset' as *;
 
 html, body {
   overflow-x: hidden;
