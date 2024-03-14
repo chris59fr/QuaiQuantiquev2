@@ -4,4 +4,6 @@
 @use 'pages/home' as *;
 
 
-
+html, body {
+  overflow-x: hidden;
+}
