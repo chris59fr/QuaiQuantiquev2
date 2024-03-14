@@ -2,8 +2,6 @@
 @use '../Base/fonts' as *;
 
 
-
-
 .cover {
   @extend %flex-column-center-sa;
   border-bottom: 4px solid $color-secondary;
@@ -26,8 +24,6 @@
   }
 
 }
-
-
 
 .cuisineAm {
   
