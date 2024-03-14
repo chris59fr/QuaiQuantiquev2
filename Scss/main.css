@@ -34,6 +34,30 @@ footer .footerBis .footerTime, footer .footerBis .footerAdress, footer .footerBi
   header .navbar-collapse {
     padding-left: 50px;
   }
+  .cover .coverLogo {
+    top: 90px;
+  }
+  .cover .btnCover {
+    bottom: 60px;
+    font-size: 1.2rem;
+  }
+  .cuisineAm .arnaudMichant {
+    height: 300px;
+    width: 263px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+  .cuisineAm .signatureOr {
+    max-width: 70%;
+    left: 115px;
+    bottom: 195px;
+    transform: rotateZ(-15deg);
+  }
+  .cuisineAm .cuisineTexte {
+    font-size: 0.855rem;
+  }
   footer .footerBis .signatureBtn .signature .footerLogo {
     max-width: 20em;
   }
@@ -51,6 +75,34 @@ footer .footerBis .footerTime, footer .footerBis .footerAdress, footer .footerBi
   }
   header .navbar-collapse {
     padding-left: 50px;
+  }
+  .cover .coverLogo {
+    top: 150px;
+  }
+  .cover .btnCover {
+    bottom: 110px;
+    font-size: 1.2rem;
+  }
+  .cuisineAm .arnaudMichant {
+    bottom: 35px;
+    height: 325px;
+    width: 263px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-right: 45px;
+  }
+  .cuisineAm .signatureOr {
+    max-width: 35%;
+    left: 375px;
+    right: 0;
+    bottom: 45px;
+    transform: rotateZ(-15deg);
+  }
+  .cuisineAm .cuisineTexte {
+    font-size: 0.855rem;
+    display: flex;
+    align-items: center;
+    bottom: 20px;
   }
   footer .footerBis .footerTime .timeOpen .weekdays {
     font-size: 0.8rem;
@@ -82,6 +134,33 @@ footer .footerBis .footerTime, footer .footerBis .footerAdress, footer .footerBi
   header .navbar-collapse {
     padding-left: 50px;
   }
+  .cover .coverLogo {
+    top: 180px;
+  }
+  .cover .btnCover {
+    bottom: 150px;
+    font-size: 1.5rem;
+  }
+  .cuisineAm .arnaudMichant {
+    bottom: 35px;
+    height: 335px;
+    width: 263px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-right: 45px;
+  }
+  .cuisineAm .signatureOr {
+    max-width: 35%;
+    right: 10px;
+    bottom: 45px;
+    transform: rotateZ(-15deg);
+  }
+  .cuisineAm .cuisineTexte {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    bottom: 35px;
+  }
   footer .footerBis .footerTime .timeOpen .weekdays {
     font-size: 1rem;
   }
@@ -108,6 +187,33 @@ footer .footerBis .footerTime, footer .footerBis .footerAdress, footer .footerBi
   }
   header .lineMenu, header .lineMenu2, header .lineMenu3, header .lineMenu4, header .lineMenu5, header .lineMenu6 {
     visibility: hidden;
+  }
+  .cover .coverLogo {
+    top: 200px;
+  }
+  .cover .btnCover {
+    bottom: 190px;
+    font-size: 1.8rem;
+  }
+  .cuisineAm .arnaudMichant {
+    bottom: 35px;
+    height: 450px;
+    width: 263px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-right: 45px;
+  }
+  .cuisineAm .signatureOr {
+    max-width: 35%;
+    right: 20px;
+    bottom: 75px;
+    transform: rotateZ(-15deg);
+  }
+  .cuisineAm .cuisineTexte {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    bottom: 75px;
   }
   footer .footerBis .footerTime .timeOpen .weekdays {
     font-size: 1rem;
@@ -140,6 +246,39 @@ footer .footerBis .footerTime, footer .footerBis .footerAdress, footer .footerBi
   header .lineMenu5,
   header .lineMenu6 {
     visibility: hidden;
+  }
+  .cover .coverLogo {
+    top: 200px;
+  }
+  .cover .btnCover {
+    bottom: 270px;
+    font-size: 2.8rem;
+  }
+  .cuisineAm .arnaudMichant {
+    bottom: 35px;
+    height: 800px;
+    width: 263px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding-right: 45px;
+  }
+  .cuisineAm .signatureOr {
+    max-width: 35%;
+    right: 20px;
+    bottom: 130px;
+    transform: rotateZ(-15deg);
+  }
+  .cuisineAm .cuisineTexte {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    bottom: 100px;
+    margin-left: 40px;
+  }
+  .carteMenu .carteHome .textCarte {
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding: 35px;
   }
   footer .footerBis .footerTime .timeOpen .weekdays {
     font-size: 1rem;
@@ -185,14 +324,21 @@ footer .footerBis .footerTime .timeOpen {
   padding-top: 15px;
 }
 footer .footerBis .footerTime .timeOpen .weekdays {
+  text-transform: uppercase;
   font-family: "Jost", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 footer .footerBis .footerTime .timeOpen .hours {
   font-family: "Jost", sans-serif;
   font-weight: lighter;
   font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 footer .footerBis .footerAdress {
   padding-top: 15px;
