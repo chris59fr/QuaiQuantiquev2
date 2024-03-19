@@ -1,3 +1,6 @@
+@use '../Abstracts/all' as *;
+@use "./fonts" as *;
+@use './variables' as *;
 
 //Reinitialisation des marges et padding
 
@@ -12,7 +15,6 @@ body {
     font-family: $font-jost;
     font-size: 10px;
     line-height: normal;
-    color: black;
   }
   
   //Styles des liens
