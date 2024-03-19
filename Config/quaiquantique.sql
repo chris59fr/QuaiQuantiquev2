@@ -476,3 +476,26 @@ ALTER TABLE `user_reservation` ADD CONSTRAINT fk_id_reservation_user FOREIGN KEY
 ALTER TABLE `reservation_allergene` ADD CONSTRAINT fk_id_reservation_allergene FOREIGN KEY (id_reservation) REFERENCES `reservation`(id_reservation);
 ALTER TABLE `reservation_allergene` ADD CONSTRAINT fk_id_allergene_reservation FOREIGN KEY (id_allergie) REFERENCES `allergenes`(id_allergie);
 
+--Modification de la table user---------------------------------------------
+-- ajout column pour stockage des tokens 
+ALTER TABLE user ADD COLUMN token VARCHAR(255);
+
+--capture la date de création du compte user
+ALTER TABLE user ADD COLUMN create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+
+-- met à jour automatiquement à chaque mise à jour de l'enregistrement du temps => pour controle sur connexions futurs
+ALTER TABLE user ADD COLUMN update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON 
+
+-- permettre de gerer les delais d' expiration des tokens inserer juste apres token
+ALTER TABLE user ADD COLUMN expire_at DATETIME AFTER token;
+--fin de la modification de la table user ------------------------------------------
+
+--nouvelle table créer pour stocker lors de la création le consentement des politique lors de l inscription
+CREATE TABLE User_Consent (
+    consent_id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    terms_version VARCHAR(255) NOT NULL,
+    consent_user BOOLEAN NOT NULL,
+    consent_timestamp DATETIME NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES User(id_user)
+);
