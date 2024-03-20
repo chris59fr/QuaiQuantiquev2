@@ -293,6 +293,7 @@ nav a:hover, nav a:focus {
   border-radius: 0px 50px 50px 0px;
 }
 
+<<<<<<< HEAD:Public/Assets/CSS/main.min.css
 .picture {
   padding: 10%;
 }
@@ -311,3 +312,6 @@ nav a:hover, nav a:focus {
   font-weight: 200;
   font-size: 0.875rem;
 }
+=======
+/*# sourceMappingURL=main.css.map */
+>>>>>>> dev:Public/Assets/CSS/main.css
