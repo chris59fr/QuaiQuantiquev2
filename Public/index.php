@@ -4,7 +4,6 @@
         define('ROOT', dirname(__DIR__));
       
         use App\Autoloader;
-        use App\Core\Main;
 
         // On importe l'Autoloader
         require_once ROOT.'/Autoloader.php';
