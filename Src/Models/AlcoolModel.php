@@ -33,7 +33,6 @@ class AlcoolModel {
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-
     /**
      * Méthode pour créer un nouvel alcool
      *
@@ -41,18 +40,18 @@ class AlcoolModel {
      * @return array|false
      */
     public function create($data) {
-    try {
-        $stmt = $this->pdo->prepare('INSERT INTO alcool (nom, type, volume, prix) VALUES (:nom, :type, :volume, :prix)');
-        $success = $stmt->execute($data);
+        try {
+            $stmt = $this->pdo->prepare('INSERT INTO alcool (nom, type, volume, prix) VALUES (:nom, :type, :volume, :prix)');
+            $success = $stmt->execute($data);
 
-        if ($success) {
-            return $this->pdo->lastInsertId(); // Récupère et retourne l'ID de l'entrée insérée
+            if ($success) {
+                return $this->pdo->lastInsertId(); // Récupère et retourne l'ID de l'entrée insérée
+            }
+            return false; // Retourne false si l'exécution de la requête a échoué
+        } catch (\PDOException $error) {
+            error_log("Erreur PDO lors de la création d'un nouvel alcool: " . $error->getMessage());
+            return false;
         }
-        return false; // Retourne false si l'exécution de la requête a échoué
-    } catch (\PDOException $error) {
-        echo "Erreur PDO lors de la création d'un nouvel alcool" . $error->getMessage();
-        return false;
-    }
     }
 
     /**
@@ -60,7 +59,7 @@ class AlcoolModel {
      *
      * @param int $id
      * @param array $data
-     * @return array|false
+     * @return bool
      */
     public function update($id, $data) {
         try {
@@ -70,7 +69,7 @@ class AlcoolModel {
     
             return $success;
         } catch (\PDOException $error) {
-            echo "Erreur PDO lors de la mise à jour d'un nouvel alcool " . $error->getMessage();
+            error_log("Erreur PDO lors de la mise à jour d'un nouvel alcool: " . $error->getMessage());
             return false;
         }
     }
@@ -88,7 +87,7 @@ class AlcoolModel {
     
             return $success;
         } catch (\PDOException $error) {
-            echo "Erreur lors de la suppression d'un alcool" . $error->getMessage();
+            error_log("Erreur lors de la suppression d'un alcool: " . $error->getMessage());
             return false;
         }
     }

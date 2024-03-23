@@ -3,50 +3,112 @@
 namespace App\Controllers;
 
 use App\Models\AlcoolModel;
-// Try + catch => Echo ?
-class AlcoolController { 
+use Exception;
+
+class AlcoolController {
     protected $model;
 
     public function __construct(AlcoolModel $model) {
         $this->model = $model;
     }
-    // Gestion d'affichage de la liste des alcools
+
     public function index() {
-        $alcools = $this->model->findAll();
-        require 'views/alcools/index.php';
+        try {
+            $alcools = $this->model->findAll();
+        } catch (Exception $e) {
+            // Log the error and handle it, maybe show an error page
+            error_log($e->getMessage());
+            $alcools = [];
+        }
+        require './../Views/Pages/Alcool.php';
     }
 
     public function show($id) {
-        $alcool = $this->model->findById($id);
+        try {
+            $alcool = $this->model->findById($id);
+            if (!$alcool) {
+                // Handle the error, maybe redirect to an error page or show a not found message
+                throw new Exception("Alcool not found");
+            }
+        } catch (Exception $e) {
+            error_log($e->getMessage());
+            // Redirection or error display logic goes here
+            header('Location: /error');
+            exit();
+        }
         require 'views/alcools/show.php';
     }
 
     public function create() {
-        // Afficher le formulaire de création
         require 'views/alcools/create.php';
     }
 
     public function store() {
-        // Traiter la soumission du formulaire de création
-        $this->model->create($_POST);
-        header('Location: /alcools');
+        $data = $this->validate($_POST);
+        try {
+            $result = $this->model->create($data);
+            if ($result) {
+                header('Location: /alcools');
+                exit();
+            } else {
+                throw new Exception("Failed to create alcool");
+            }
+        } catch (Exception $e) {
+            error_log($e->getMessage());
+            // Redirect to an error page or display an error message
+            header('Location: /error');
+            exit();
+        }
     }
 
     public function edit($id) {
-        // Afficher le formulaire d'édition
-        $alcool = $this->model->findById($id);
+        try {
+            $alcool = $this->model->findById($id);
+            if (!$alcool) {
+                throw new Exception("Alcool not found");
+            }
+        } catch (Exception $e) {
+            error_log($e->getMessage());
+            header('Location: /error');
+            exit();
+        }
         require 'views/alcools/edit.php';
     }
 
     public function update($id) {
-        // Traiter la soumission du formulaire d'édition
-        $this->model->update($id, $_POST);
-        header('Location: /alcools');
+        $data = $this->validate($_POST);
+        try {
+            if ($this->model->update($id, $data)) {
+                header('Location: /alcools');
+                exit();
+            } else {
+                throw new Exception("Failed to update alcool");
+            }
+        } catch (Exception $e) {
+            error_log($e->getMessage());
+            header('Location: /error');
+            exit();
+        }
     }
 
     public function delete($id) {
-        // Supprimer un enregistrement
-        $this->model->delete($id);
-        header('Location: /alcools');
+        try {
+            if ($this->model->delete($id)) {
+                header('Location: /alcools');
+                exit();
+            } else {
+                throw new Exception("Failed to delete alcool");
+            }
+        } catch (Exception $e) {
+            error_log($e->getMessage());
+            header('Location: /error');
+            exit();
+        }
+    }
+
+    private function validate($data) {
+        // Implement your validation logic here
+        // For example, check if all required fields are present and sanitize the input data
+        return $data;
     }
 }
