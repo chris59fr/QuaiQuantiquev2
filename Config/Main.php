@@ -34,18 +34,8 @@ use App\Src\Controllers\MainController;
             // Si au moins 1 paramètre existe
             try {
                 if($params[0] != ""){
-                    //création du namespace
-                    //extrait du tableau $params la premiere valeur qui est le controller met sa lettre en majuscule pour respecter nommage
-                    //et on concatene avec controller à la suite pour avoir le namespace complet correspondant à la class 
-                    $controller = '\\App\\SRC\\Controllers\\'.ucfirst(array_shift($params)).'Controller';  
-                    
-                    //on gère les erreurs sur la récupération du controlleur 
-                    if (!class_exists($controller)) {
-                        throw new RouteurException("Le contrôleur '$controller' n'existe pas.");                
-                        
-                    }
-
-                    $controller = new $controller();
+                    $controllerValue = array_shift($params);
+                    $controller =ControllerFactory::CreateController($controllerValue);
 
                     //on récupère le deuxieme paramètre correspondant à la méthode
                     $action = (isset($params[0])) ? array_shift($params) : 'index';
