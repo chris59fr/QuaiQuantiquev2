@@ -185,9 +185,9 @@ CREATE TABLE alcool
 );
 
 
-INSERT INTO `role` (`id_role`, `name_role`) VALUES
-(1, 'Administrateur'),
-(2, 'Employe');
+INSERT INTO `role` (`name_role`) VALUES
+('Administrateur'),
+('Employe');
 
 INSERT INTO `user` (`name_user`, `firstname_user`, `dob_user`, `email_user`, `password_user`, `id_role`) VALUES
 ('Blamxis', 'Maxime', '1997-01-01', 'Maxime@example.com', 'MotDePasseMaxime', 1),
@@ -205,15 +205,15 @@ INSERT INTO `user` (`name_user`, `firstname_user`, `dob_user`, `email_user`, `pa
 ('Lefebvre', 'Clara', '1991-03-03', 'clara.lefebvre@email.com', 'mdpClara91', 2); 
 --Securite niveau APP
 
-INSERT INTO `allergenes` (`id_allergie`, `name_allergie`) VALUES
-(1, 'aucun'),
-(2, 'gluten'),
-(3, 'lactose'),
-(4, 'fruits à coques'),
-(5, 'oeuf'),
-(6, 'arachide'),
-(7, 'crustacé'),
-(8, 'autres');
+INSERT INTO `allergenes` ( `name_allergie`) VALUES
+('aucun'),
+('gluten'),
+('lactose'),
+('fruits à coques'),
+('oeuf'),
+('arachide'),
+('crustacé'),
+('autres');
 
 INSERT INTO `user_allergene` (`id_user`, `id_allergie`) VALUES
 (2, 3),
@@ -396,53 +396,53 @@ INSERT INTO `menu` (`nom_formules`, `description_formule`, `prix_menu`, `id_user
 ('Formule du Chef', '"Faite confiance au chef, laissez-le guider vos assiettes par toute sa créativité et son savoir_faire avec les produits de saison."', 250, 1);
 
 
-INSERT INTO `images` (`id_images`, `name_images`, `chemin_images`) VALUES
-(1, 'FOIE GRAS DE CANARD', 'uploads/FOIE GRAS DE CANARD_20240128-175422.webp'),
-(2, 'GASPACHO DE CONCOMBRE', 'uploads/GASPACHO DE CONCOMBRE_20240128-175428.webp'),
-(3, 'LANGOUSTINES EN CARPACCIO', 'uploads/LANGOUSTINES EN CARPACCIO_20240128-175435.'),
-(4, 'OEUF DE FERME MOLLET', 'uploads/OEUF DE FERME MOLLET_20240128-175443.webp'),
-(5, 'SALADE DE POUSSES D’EPINARD ', 'uploads/SALADE DE POUSSES D’EPINARD _20240128-1754'),
-(6, 'TARTARE DE BOEUF SUISSE AU COUTEAU', 'uploads/TARTARE DE BOEUF SUISSE AU COUTEAU_2024012'),
-(7, 'FONDU SAVOYARDE', 'uploads/FONDU SAVOYARDE_20240128-175511.webp'),
-(8, 'LA LONGEOLE', 'uploads/LA LONGEOLE_20240128-175516.webp'),
-(9, 'OMBLE CHEVALIER DU LAC', 'uploads/OMBLE CHEVALIER DU LAC_20240128-175524.web'),
-(10, 'RÖSTI', 'uploads/RÖSTI_20240128-175533.webp'),
-(11, 'TARTE REBLOCHON SAVOIE', 'uploads/TARTE REBLOCHON SAVOIE_20240128-175545.web'),
-(12, 'TARTIFLETTE', 'uploads/TARTIFLETTE_20240128-175551.webp'),
-(13, 'FROMAGES', 'uploads/FROMAGES_20240128-175618.webp'),
-(14, 'PLATEAU FRANCAIS', 'uploads/PLATEAU FRANCAIS_20240128-175623.webp'),
-(15, 'PLATEAU SUISSE', 'uploads/PLATEAU SUISSE_20240128-175629.webp'),
-(16, 'CREME BRULEE', 'uploads/CREME BRULEE_20240128-175650.webp'),
-(17, 'EBENE BELLA', 'uploads/EBENE BELLA_20240128-175656.webp'),
-(18, 'PAVLOVA', 'uploads/PAVLOVA_20240128-175702.webp'),
-(19, 'FONDUE CHOCOLAT', 'uploads/FONDUE CHOCOLAT_20240128-175710.webp'),
-(20, 'MERINGUE DOUBLE CREME', 'uploads/MERINGUE DOUBLE CREME_20240128-175717.webp'),
-(21, 'TARTE NOIX CARAMEL', 'uploads/TARTE NOIX CARAMEL_20240128-175723.webp'),
-(22, 'image-aperitif-1', 'uploads/image-aperitif-1_20240128-175733.webp'),
-(23, 'image-aperitif-2', 'uploads/image-aperitif-2_20240128-175745.webp'),
-(24, 'image-aperitif-3', 'uploads/image-aperitif-3_20240128-175750.webp'),
-(25, 'image-digestif-1', 'uploads/image-digestif-1_20240128-175758.webp'),
-(26, 'image-digestif-2', 'uploads/image-digestif-2_20240128-175803.webp'),
-(27, 'image-digestif-3', 'uploads/image-digestif-3_20240128-175810.webp'),
-(28, 'image-digestif-4', 'uploads/image-digestif-4_20240128-175817.webp'),
-(29, 'categorie_vin', 'uploads/categorie_vin_20240128-175828.webp'),
-(30, 'Rosée', 'uploads/Rosée_20240128-175834.webp'),
-(31, 'Rouge', 'uploads/Rouge_20240128-175841.webp'),
-(32, 'Vin-blanc', 'uploads/Vin-blanc_20240128-175846.webp'),
-(33, 'Vin-rouge', 'uploads/Vin-rouge_20240128-175851.webp'),
-(34, 'cuisinier_1', 'uploads/cuisinier_1_20240128-175900.webp'),
-(35, 'cuisinier_2', 'uploads/cuisinier_2_20240128-175905.webp'),
-(36, 'cuisinier_3', 'uploads/cuisinier_3_20240128-175911.webp'),
-(37, 'cuisinier_4', 'uploads/cuisinier_4_20240128-175923.webp'),
-(38, 'cuisinier_5', 'uploads/cuisinier_5_20240128-175929.webp'),
-(39, 'cuisinier_6', 'uploads/cuisinier_6_20240128-175934.webp'),
-(40, 'cuisinier_7', 'uploads/cuisinier_7_20240128-175939.webp'),
-(41, 'cuisinier_8', 'uploads/cuisinier_8_20240128-175946.webp'),
-(42, 'montagne suisse', 'uploads/montagne suisse_20240128-175954.webp'),
-(43, 'image_luxe_1', 'uploads/image_luxe_1_20240128-180002.webp'),
-(44, 'image_luxe_2', 'uploads/image_luxe_2_20240128-180006.webp'),
-(45, 'image_luxe_3', 'uploads/image_luxe_3_20240128-180011.webp'),
-(46, 'image_luxe_4', 'uploads/image_luxe_4_20240128-180020.webp');
+INSERT INTO `images` (`name_images`, `chemin_images`) VALUES
+('FOIE GRAS DE CANARD', 'uploads/FOIE GRAS DE CANARD_20240128-175422.webp'),
+('GASPACHO DE CONCOMBRE', 'uploads/GASPACHO DE CONCOMBRE_20240128-175428.webp'),
+('LANGOUSTINES EN CARPACCIO', 'uploads/LANGOUSTINES EN CARPACCIO_20240128-175435.'),
+('OEUF DE FERME MOLLET', 'uploads/OEUF DE FERME MOLLET_20240128-175443.webp'),
+('SALADE DE POUSSES D’EPINARD ', 'uploads/SALADE DE POUSSES D’EPINARD _20240128-1754'),
+('TARTARE DE BOEUF SUISSE AU COUTEAU', 'uploads/TARTARE DE BOEUF SUISSE AU COUTEAU_2024012'),
+('FONDU SAVOYARDE', 'uploads/FONDU SAVOYARDE_20240128-175511.webp'),
+('LA LONGEOLE', 'uploads/LA LONGEOLE_20240128-175516.webp'),
+('OMBLE CHEVALIER DU LAC', 'uploads/OMBLE CHEVALIER DU LAC_20240128-175524.web'),
+('RÖSTI', 'uploads/RÖSTI_20240128-175533.webp'),
+('TARTE REBLOCHON SAVOIE', 'uploads/TARTE REBLOCHON SAVOIE_20240128-175545.web'),
+('TARTIFLETTE', 'uploads/TARTIFLETTE_20240128-175551.webp'),
+('FROMAGES', 'uploads/FROMAGES_20240128-175618.webp'),
+('PLATEAU FRANCAIS', 'uploads/PLATEAU FRANCAIS_20240128-175623.webp'),
+('PLATEAU SUISSE', 'uploads/PLATEAU SUISSE_20240128-175629.webp'),
+('CREME BRULEE', 'uploads/CREME BRULEE_20240128-175650.webp'),
+('EBENE BELLA', 'uploads/EBENE BELLA_20240128-175656.webp'),
+('PAVLOVA', 'uploads/PAVLOVA_20240128-175702.webp'),
+('FONDUE CHOCOLAT', 'uploads/FONDUE CHOCOLAT_20240128-175710.webp'),
+('MERINGUE DOUBLE CREME', 'uploads/MERINGUE DOUBLE CREME_20240128-175717.webp'),
+('TARTE NOIX CARAMEL', 'uploads/TARTE NOIX CARAMEL_20240128-175723.webp'),
+('image-aperitif-1', 'uploads/image-aperitif-1_20240128-175733.webp'),
+('image-aperitif-2', 'uploads/image-aperitif-2_20240128-175745.webp'),
+('image-aperitif-3', 'uploads/image-aperitif-3_20240128-175750.webp'),
+('image-digestif-1', 'uploads/image-digestif-1_20240128-175758.webp'),
+('image-digestif-2', 'uploads/image-digestif-2_20240128-175803.webp'),
+('image-digestif-3', 'uploads/image-digestif-3_20240128-175810.webp'),
+('image-digestif-4', 'uploads/image-digestif-4_20240128-175817.webp'),
+('categorie_vin', 'uploads/categorie_vin_20240128-175828.webp'),
+('Rosée', 'uploads/Rosée_20240128-175834.webp'),
+('Rouge', 'uploads/Rouge_20240128-175841.webp'),
+('Vin-blanc', 'uploads/Vin-blanc_20240128-175846.webp'),
+('Vin-rouge', 'uploads/Vin-rouge_20240128-175851.webp'),
+('cuisinier_1', 'uploads/cuisinier_1_20240128-175900.webp'),
+('cuisinier_2', 'uploads/cuisinier_2_20240128-175905.webp'),
+('cuisinier_3', 'uploads/cuisinier_3_20240128-175911.webp'),
+('cuisinier_4', 'uploads/cuisinier_4_20240128-175923.webp'),
+('cuisinier_5', 'uploads/cuisinier_5_20240128-175929.webp'),
+('cuisinier_6', 'uploads/cuisinier_6_20240128-175934.webp'),
+('cuisinier_7', 'uploads/cuisinier_7_20240128-175939.webp'),
+('cuisinier_8', 'uploads/cuisinier_8_20240128-175946.webp'),
+('montagne suisse', 'uploads/montagne suisse_20240128-175954.webp'),
+('image_luxe_1', 'uploads/image_luxe_1_20240128-180002.webp'),
+('image_luxe_2', 'uploads/image_luxe_2_20240128-180006.webp'),
+('image_luxe_3', 'uploads/image_luxe_3_20240128-180011.webp'),
+('image_luxe_4', 'uploads/image_luxe_4_20240128-180020.webp');
 
 
 
