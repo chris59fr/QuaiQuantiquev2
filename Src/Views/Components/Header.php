@@ -1,5 +1,5 @@
 
-  <header>
+  <header class="fixed-top d-flex">
     <div class="line-containerUp">
       <div class="lineUp"></div>
     </div>
