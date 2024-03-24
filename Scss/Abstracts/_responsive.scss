@@ -1,4 +1,5 @@
 // GESTION DES POINTS DE RUPTURE (MEDIA QUERIES)
+$breakpoint-xsmall: 320px;
 $breakpoint-small: 576px;
 $breakpoint-medium: 768px;
 $breakpoint-large: 992px;
@@ -29,6 +30,42 @@ $breakpoint-xlarge: 1200px;
     }
     .navbar-collapse {
       padding-left: 50px;
+    }
+  }
+
+  .cover {
+    
+    .coverLogo{
+      top: 90px;
+    }
+
+    .btnCover {
+      bottom: 60px;
+      font-size: 1.2rem;
+    }
+    
+  }
+  
+  .cuisineAm {
+
+    .arnaudMichant {
+      
+      height: 300px;
+      width: 263px;
+      object-fit: cover;
+      padding-right: 15px;
+      padding-bottom: 15px;
+      
+    }
+    .signatureOr {
+      max-width: 70%;
+      left: 115px;
+      bottom: 195px;
+      transform: rotateZ(-15deg);
+    }
+    
+    .cuisineTexte {
+      font-size: 0.855rem;
     }
   }
 
@@ -69,6 +106,44 @@ $breakpoint-xlarge: 1200px;
 
     .navbar-collapse {
       padding-left: 50px;
+    }
+  }
+
+  .cover {
+    
+    .coverLogo{
+      top: 150px;
+    }
+
+    .btnCover {
+      bottom: 110px;
+      font-size: 1.2rem;
+    }
+
+  }
+
+  .cuisineAm {
+
+    .arnaudMichant {
+      bottom: 35px;
+      height: 325px;
+      width: 263px;
+      object-fit: cover;
+      padding-right: 45px;
+    }
+    .signatureOr {
+      max-width: 35%;
+      left: 375px;
+      right: 0;
+      bottom: 45px;
+      transform: rotateZ(-15deg);
+    }
+    
+    .cuisineTexte {
+      font-size: 0.855rem;
+      display: flex;
+      align-items: center;
+      bottom: 20px;
     }
   }
 
@@ -129,6 +204,42 @@ $breakpoint-xlarge: 1200px;
     }
   }
 
+  .cover {
+    
+    .coverLogo{
+      top: 180px;
+    }
+
+    .btnCover {
+      bottom: 150px;
+      font-size: 1.5rem;
+    }
+  }
+
+  .cuisineAm {
+
+    .arnaudMichant {
+      bottom: 35px;
+      height: 335px;
+      width: 263px;
+      object-fit: cover;
+      padding-right: 45px;
+    }
+    .signatureOr {
+      max-width: 35%;
+      right: 10px;
+      bottom: 45px;
+      transform: rotateZ(-15deg);
+    }
+    
+    .cuisineTexte {
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      bottom: 35px;
+    }
+  }
+
   footer {
 
     .footerBis {
@@ -183,6 +294,43 @@ $breakpoint-xlarge: 1200px;
     
   }
 
+  .cover {
+
+    .coverLogo{
+      top: 200px;
+    }
+
+    .btnCover {
+      bottom: 190px;
+      font-size: 1.8rem;
+    }
+
+  }
+
+  .cuisineAm {
+
+    .arnaudMichant {
+      bottom: 35px;
+      height: 450px;
+      width: 263px;
+      object-fit: cover;
+      padding-right: 45px;
+    }
+    .signatureOr {
+      max-width: 35%;
+      right:  20px;
+      bottom: 75px;
+      transform: rotateZ(-15deg);
+    }
+    
+    .cuisineTexte {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      bottom: 75px;
+    }
+  }
+  
   footer {
 
     .footerBis {
@@ -243,6 +391,54 @@ $breakpoint-xlarge: 1200px;
 
   }
 
+  .cover {
+
+    .coverLogo{
+      top: 200px;
+    }
+
+    .btnCover {
+      bottom: 270px;
+      font-size: 2.8rem;
+    }
+
+  }
+  .cuisineAm {
+
+    .arnaudMichant {
+      bottom: 35px;
+      height: 800px;
+      width: 263px;
+      object-fit: cover;
+      padding-right: 45px;
+    }
+    .signatureOr {
+      max-width: 35%;
+      right: 20px;
+      bottom: 130px;
+      transform: rotateZ(-15deg);
+    }
+    
+    .cuisineTexte {
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      bottom: 100px;
+      margin-left: 40px;
+    }
+  }
+  .carteMenu {
+
+    .carteHome {
+
+      .textCarte {
+
+        font-size: 1.2rem;
+        line-height: 25px;
+        padding: 35px;
+      }
+    }
+  }
   footer {
 
     .footerBis {
