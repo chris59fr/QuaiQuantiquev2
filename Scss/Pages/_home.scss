@@ -1,0 +1,220 @@
+@use '../Abstracts/all' as *;
+@use '../Base/fonts' as *;
+
+
+
+
+.cover {
+  @extend %flex-column-center-sa;
+  border-bottom: 4px solid $color-secondary;
+  @include box-shadow(0px, 2px, 4px, black);
+
+  .coverLogo{
+    position: absolute;
+    z-index: 2;
+    width: 60%;
+  }
+  .coverImage {
+    bottom: 0;
+    position: relative;
+    max-width: 100%;
+  }
+  .btnCover {
+    position: absolute;
+    text-transform: uppercase;
+    color: $color-third;
+  }
+
+}
+
+
+
+.cuisineAm {
+  
+  border-bottom: 4px solid $color-secondary;
+  @include box-shadow(0px, 2px, 4px, black);
+  z-index: 24;
+
+  .arnaudMichant {
+    position: relative;
+    max-width: 70%;
+    z-index: 2;
+    transform: scaleX(-1);
+    @include box-shadow(5, 6, 4, $color-primary-light-30);
+  
+  }
+  .signatureOr {
+    position: absolute;
+    z-index: 3;
+  }
+  .cuisineTexte {
+    font-family: $font-jost;
+    line-height: normal;
+  }
+
+}
+
+
+
+.carteMenu {
+
+  border-bottom: 4px solid $color-secondary;
+  @include box-shadow(0px, 2px, 4px, black);
+  z-index: 23;
+
+  .carteHome {
+    background-color: $color-primary;
+    text-align: center;
+    
+    .titreCarte{
+      padding: 15px;
+      font-style: italic;
+
+      h2 {
+        @include font($font-luxurious-script, normal, $font-size-xxlarge);
+        color: $color-secondary;
+      }
+      p {
+        color: $color-third;
+        font-family: $font-jost;
+        font-weight: lighter;
+      }
+    }
+    .textCarte {
+      color: $color-third;
+      font-family: $font-jost;
+      font-size: $font-size-small;
+      font-weight: 200;
+      line-height: 20px;
+      padding: 15px;
+    }
+    .btnCarte {
+      text-transform: uppercase;
+      color: $color-third;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .carteTartiflette{
+      width: 800px;
+      height: 172px;
+      object-fit: cover;
+      object-position: 70% 30%;
+    }
+  
+  
+  }
+
+  .menuHome {
+    background-color: $color-third;
+    padding-bottom: 25px;
+
+    .titreMenu {
+      padding: 15px;
+      text-align: center;
+
+      h2 {
+        @include font($font-luxurious-script, normal, $font-size-xxlarge);
+        color: $color-secondary;
+      } 
+    }
+    .texteFormule {
+      @extend %flex-spacebet ;
+      
+      .formule{
+        @include font($font-jost, normal, 1.2rem);
+        color: $color-primary;
+      }
+      .formuleService {
+        @include font($font-luxurious-script, normal, 2rem);
+        color: $color-secondary;
+        position: absolute;
+        left: 85px;
+      }
+      .prixMenu {
+        @include font($font-jost, bolder, 1.2rem);
+        color: $color-primary;
+      }
+    }
+    .texteMenu {
+      @include font($font-jost, lighter, 1.2rem);
+      font-style: italic;
+      text-align: center;
+      padding: 15px;
+    }
+    .texteFormule2 {
+      @extend %flex-spacebet ;
+
+      .formule2 {
+        @include font($font-jost, normal, 1.2rem);
+        color: $color-primary;
+      }
+      .prixMenu2 {
+        @include font($font-jost, bolder, 1.2rem);
+        color: $color-primary;
+      }
+    }
+    .signMenu {
+      max-width: 35%;
+      transform: rotateZ(347deg);
+    }
+  }
+}
+
+.galerieHome {
+  background-color: $color-primary;
+  @extend %flex-column-center-sa;
+  border-bottom: 4px solid $color-secondary;
+  @include box-shadow(0px, 2px, 4px, black);
+  z-index: 22;
+
+  h2 {
+    @include font($font-luxurious-script, normal, $font-size-xxlarge);
+    color: $color-secondary;
+    padding: 15px;
+  }
+
+  .btnReversez {
+    text-transform: uppercase;
+    color: $color-third;
+    margin: 15px;
+  }
+  
+  .card-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  
+  .card {
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+    transition: all 0.5s;
+  
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+}
+
+
+
+
+
+
+.imgNature img {
+  max-width: 101.5%;
+  top: 50px;
+}
+
+.avisHome {
+  background-color: $color-primary-light-30;
+  @extend %flex-column-center-sa;
+}
