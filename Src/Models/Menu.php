@@ -3,7 +3,8 @@
 namespace Src\Models;
 
 class MenuModel {
-
+  //propriété : public $nom;
+  // public  $chemin;
   public function __construct(private string $nom_formule, private string $description_formule, private int $prix_menu)
   {
     $this->nom_formule = $nom_formule;

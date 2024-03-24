@@ -9,7 +9,7 @@ use Config\Repository\Database;
 
 abstract class AbstractRepository 
 {
-    /**
+  /**
    * Connexion BDD
    */
   protected function getDBConnection() 
