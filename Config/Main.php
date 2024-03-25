@@ -44,9 +44,7 @@ use App\Src\Controllers\MainController;
                     if (!method_exists($controller, $action)) {
                         throw new RouteurException("La méthode '$action' n'existe pas sur le contrôleur '$controller'.");
                     }
-                    $controller = new MainController();
                     $controller->index();
-
                 }
             }catch(RouteurException $e){
                 $message = $e->getMessage();
@@ -54,7 +52,7 @@ use App\Src\Controllers\MainController;
             }catch(\Exception $e) {
                 $message = "Erreur capturée relative au rooter: " . $e->getMessage() . "\n";
                 $message .= "Fichier : " . $e->getFile() . "\n";
-                $message .= "Ligne : " . $e->getLine() . "\n\n"; // Deux sauts de ligne pour séparer clairement les entrées
+                $message .= "Ligne : " . $e->getLine() . "\n\n"; 
                 error_log($message);
                 http_response_code(500);
                 exit;         
