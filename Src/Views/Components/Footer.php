@@ -1,5 +1,5 @@
 <footer class="container-fluid">
-  <div class="row d-flex">
+  <div class="row footerBis">
     <div class="footerTime col-md-6 col-lg-4">
       <h2>Horaires d'ouvertures</h2>
       <div class="timeOpen">
