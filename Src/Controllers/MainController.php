@@ -12,6 +12,6 @@
          */
         public function index()
         {
-            echo 'test de fonctionnement du controller en MVC';
+            echo 'test de fonctionnement du controller le routeur fonctionne correctement '. '<br> '.' ceci est la fonction "index" dans "MainController"';
         }
     }

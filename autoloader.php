@@ -13,7 +13,7 @@
        
         static function autoload($class){
 
-//retirons "App\ 
+//retirons "App"\ 
             $class = str_replace(__NAMESPACE__. '\\','',$class);
             
 //nous remplaçons les "\" par des "/" pour obtenir: controleur/action 

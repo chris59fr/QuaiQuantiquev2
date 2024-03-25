@@ -1,5 +1,5 @@
 <?php
-namespace App\Models;
+namespace App\Src\Models;
 
 class ErrorModel {
     public static function getErrorMessage($code, $customMessage = "") {

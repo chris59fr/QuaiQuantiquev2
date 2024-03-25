@@ -1,5 +1,5 @@
 <?php
-namespace App\Config;
+namespace App\Src\Factories;
 
 use App\config\Exception\RouteurException;
 
@@ -21,7 +21,7 @@ use App\config\Exception\RouteurException;
         public static function CreateController(string $controllerName): object{
             $className = "\\App\\SRC\\Controllers\\". ucfirst($controllerName) . "controller";
             if (!class_exists($className)) {
-                throw new RouteurException("Le contrôleur $className n'existe pas.");
+                throw new RouteurException(404);
             }
             return new $className;
         }

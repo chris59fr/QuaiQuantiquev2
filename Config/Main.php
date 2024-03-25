@@ -2,17 +2,16 @@
     namespace App\config;
 
 use App\config\Exception\RouteurException;
+
 use App\Src\Controllers\MainController;
-
-
-
+use App\Src\Factories\ControllerFactory;
 
     class Main
     {
         public function start()
         {
             // On récupère l'adresse
-            $uri = $_SERVER['REQUEST_URI'];
+            $uri = $_SERVER['REQUEST_URI']; 
             //  var_dump($_SERVER);
             // On vérifie si elle n'est pas vide, si elle n'ai pas seulement '/' sinon boucle infini et si elle se termine par un '/' pour eviter PB=>SEO et trailing slash
             if(!empty($uri) && $uri != '/' && $uri[-1] === '/'){
@@ -42,13 +41,15 @@ use App\Src\Controllers\MainController;
                     
                     // Récupération de la méthode...
                     if (!method_exists($controller, $action)) {
-                        throw new RouteurException("La méthode '$action' n'existe pas sur le contrôleur '$controller'.");
+                        throw new RouteurException(404);
                     }
                     $controller->index();
                 }
             }catch(RouteurException $e){
-                $message = $e->getMessage();
-                echo "$message";
+                http_response_code($e->getCode());
+                $errorMessage = $e->getMessage();
+                $errorCode = $e->getCode();
+                require_once ROOT."/Src/views/Pages/error.php";
             }catch(\Exception $e) {
                 $message = "Erreur capturée relative au rooter: " . $e->getMessage() . "\n";
                 $message .= "Fichier : " . $e->getFile() . "\n";
@@ -59,6 +60,3 @@ use App\Src\Controllers\MainController;
             }
         }
     }
-
-    /*
-    penser a creer la classe EXceptionRooter */

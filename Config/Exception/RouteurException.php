@@ -1,10 +1,11 @@
 <?php
 
 namespace App\config\Exception;
-use App\Models\ErrorModel;
+use App\Src\Models\ErrorModel;
     class RouteurException extends \Exception
     {
         public function __construct($code = 0, $message = "") {
-            parent::__construct(ErrorModel::getErrorMessage($code, $message), $code);
+            $message = ErrorModel::getErrorMessage($code, $message);
+            parent::__construct($message, $code);
         }
     }

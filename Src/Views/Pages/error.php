@@ -5,22 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carte</title>
-  <link rel="stylesheet" href="../../../Public/Assets/CSS/bootstrap.css">
-  <link rel="stylesheet" href="../../../Public/Assets/CSS/main.css">
+  <link rel="stylesheet" href="/Assets/CSS/bootstrap.css">
+  <link rel="stylesheet" href="/Assets/CSS/main.css">
   
 </head>
 <body>
 
-  <?php require_once '../Components/Header.php'; ?>
+  <?php require_once ROOT.'/Src/views/Components/header.php' ?>
 
-  <main>
-    <div>
-        <p>Code d'erreur : <?= $errorCode; ?></p>
+  <main class="container-fluid">
+    <div class="d-flex justify-content-center flex-column align-items-center custom-error">
+        <p>Code d'erreur : <?= htmlspecialchars($errorCode); ?></p>
         <p>Message d'erreur : <?= htmlspecialchars($errorMessage); ?></p>
     </div>
   </main>
 
-  <?php require_once '../Components/Footer.php'; ?>
+  <?php require_once ROOT.'/Src/views/Components/footer.php' ?>
 
 </body>
 </html>
