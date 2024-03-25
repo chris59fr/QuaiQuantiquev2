@@ -23,6 +23,6 @@ use App\config\Exception\RouteurException;
             if (!class_exists($className)) {
                 throw new RouteurException("Le contrôleur $className n'existe pas.");
             }
-            return new $className();
+            return new $className;
         }
     }
