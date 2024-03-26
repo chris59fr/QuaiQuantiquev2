@@ -44,7 +44,7 @@
     </div>
     <div class="signatureBtn col-md-12 col-lg-4">
       <div class="signature">
-        <img class="footerLogo" src="../../../Public/Assets/Images/Logo/LogoOK.svg">
+        <img class="footerLogo" src="/Assets/Images/Logo/LogoOK.svg">
         <h5>Au plaisir de vous recevoir !</h5>
       </div>
       <button class="btn btn-warning btnFooter">Contact</button>
@@ -56,6 +56,6 @@
   </div>
 </footer>
 
-<script src="../../../Public/Assets/JS/bootstrap.bundle.min.js"></script>
+<script src="/Assets/JS/bootstrap.bundle.min.js"></script>
 
   
