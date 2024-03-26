@@ -10,8 +10,9 @@
          *
          * @return void
          */
-        public function index() 
+        public function home() 
         {
-            echo 'test de fonctionnement du controller le routeur fonctionne correctement '. '<br> '.' ceci est la fonction "index" dans "MainController"';
+            require_once ROOT. "/Src/Views/Pages/Home.php";
         }
+
     }

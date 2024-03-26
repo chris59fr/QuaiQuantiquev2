@@ -38,7 +38,7 @@ use App\Src\Factories\ControllerFactory;
                     $controller =ControllerFactory::CreateControllerRouteur($controllerValue);
 
                     //on récupère le deuxieme paramètre correspondant à la méthode
-                    $action = (isset($params[0])) ? array_shift($params) : 'index';
+                    $action = (isset($params[0])) ? array_shift($params) : 'home';
                     
                     // Récupération de la méthode...
                     if (!method_exists($controller, $action)) {
@@ -49,7 +49,7 @@ use App\Src\Factories\ControllerFactory;
                 }else{
                     $controlerValue = 'main';
                     $controller = ControllerFactory::CreateControllerRouteur($controlerValue);
-                    $controller->index();
+                    $controller->home();
                 }
                 
             }catch(RouteurException $e){
