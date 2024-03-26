@@ -15,9 +15,8 @@
 
   <main class="container-fluid">
     <div class="d-flex justify-content-center flex-column align-items-center custom-error">
-       <h1>Bienvenue sur la page d accueil du restaurant <br> ceci sera a modifier
-        , le html et le scss cree ici est là pour tester le fonctionnement du routeur <br> il faudra plutard le creer pour cette pages et le scss correspondant
-       </h1>
+        <p>Code d'erreur : <?= htmlspecialchars($errorCode); ?></p>
+        <p>Message d'erreur : <?= htmlspecialchars($errorMessage); ?></p>
     </div>
   </main>
 
