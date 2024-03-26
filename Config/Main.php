@@ -33,8 +33,9 @@ use App\Src\Factories\ControllerFactory;
             // Si au moins 1 paramètre existe
             try {
                 if($params[0] != ""){
-                    $controllerValue = array_shift($params);
-                    $controller =ControllerFactory::CreateController($controllerValue);
+                    $controllerValue = array_shift($params);//on capture le nom du controleur
+                    //on recherche la classe et si elle existe on instancie un nouvelle objet de cette classe
+                    $controller =ControllerFactory::CreateControllerRouteur($controllerValue);
 
                     //on récupère le deuxieme paramètre correspondant à la méthode
                     $action = (isset($params[0])) ? array_shift($params) : 'index';
@@ -43,8 +44,14 @@ use App\Src\Factories\ControllerFactory;
                     if (!method_exists($controller, $action)) {
                         throw new RouteurException(404);
                     }
+                    //permet d'ajouter egalement si d'autres parametres sont passé dans l url 
+                    (isset($params[0])) ? call_user_func_array([$controller,$action], $params) : $controller->$action();
+                }else{
+                    $controlerValue = 'main';
+                    $controller = ControllerFactory::CreateControllerRouteur($controlerValue);
                     $controller->index();
                 }
+                
             }catch(RouteurException $e){
                 http_response_code($e->getCode());
                 $errorMessage = $e->getMessage();

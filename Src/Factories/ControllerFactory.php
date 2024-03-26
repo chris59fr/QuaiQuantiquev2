@@ -2,6 +2,7 @@
 namespace App\Src\Factories;
 
 use App\config\Exception\RouteurException;
+use App\Src\Controllers\MainController;
 
     class ControllerFactory 
     {   
@@ -18,11 +19,12 @@ use App\config\Exception\RouteurException;
         * 
         * @throws RouteurException Si la classe du contrôleur n'existe pas.
         */
-        public static function CreateController(string $controllerName): object{
+        public static function CreateControllerRouteur(string $controllerName): object{
             $className = "\\App\\SRC\\Controllers\\". ucfirst($controllerName) . "controller";
             if (!class_exists($className)) {
                 throw new RouteurException(404);
             }
             return new $className;
         }
+
     }
