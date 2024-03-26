@@ -15,8 +15,8 @@
 
   <main class="container-fluid">
     <div class="d-flex justify-content-center flex-column align-items-center custom-error">
-       <h1>Bienvenue sur la page d accueil du restaurant ceci sera a modifier
-        le scss cree ici est juste pour un test pour le routeur il faudra creer pour cette pages le scss correspondant
+       <h1>Bienvenue sur la page d accueil du restaurant <br> ceci sera a modifier
+        , le html et le scss cree ici est là pour tester le fonctionnement du routeur <br> il faudra plutard le creer pour cette pages et le scss correspondant
        </h1>
     </div>
   </main>

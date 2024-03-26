@@ -1,12 +1,12 @@
 <?php
     namespace App\Src\Controllers;
     /**
-     * Le contrôller par défaut
+     * Le controlleur par défaut
      */
     class MainController
     {   
         /**
-         * fonction qui gère l'affichage de la page d'accueil cette fonction est un test on peut la remplacer par fonction home et inclure la page d accueil
+         * fonction qui gère l'affichage de la page d'accueil => valeur par défaut si pas de paramètres passés.
          *
          * @return void
          */
