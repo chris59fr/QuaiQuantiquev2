@@ -34,7 +34,7 @@ use App\Src\Factories\ControllerFactory;
             }
             
             //gère les parametres de l'URL après le '?p='
-            //on les recupères dans un tableau $params en les séparants avec la méthode explode
+            //on les recupères dans un tableau $params en les séparants avec la méthode explode.
             $params = [];         
             $params = explode('/', $_GET['p']);
 
